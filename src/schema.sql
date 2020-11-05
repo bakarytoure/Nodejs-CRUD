@@ -1,0 +1,6 @@
+CREATE TABLE books (
+  uid SERIAL PRIMARY KEY,
+  bookname VARCHAR(255) UNIQUE,
+  bookauthor VARCHAR(255),
+  date_created DATE NOT NULL DEFAULT CURRENT_DATE
+);
